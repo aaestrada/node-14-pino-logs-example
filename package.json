@@ -1,0 +1,19 @@
+{
+  "name": "pino-logs-node-14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:e": "cat log | pino-elasticsearch --index IndexName -H localhost:$PORT -p 9200 -b 1000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pino": "^7.1.0",
+    "pino-elasticsearch": "^6.2.0",
+    "pino-pretty": "^7.2.0"
+  }
+}
